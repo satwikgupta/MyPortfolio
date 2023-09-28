@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2a63bb5ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-web.png" alt="Satwik" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    I am <span class="name-title"></span>
+                </p>
+                <h1>Hi, I am <span>Satwik Gupta</Satwik></span><br> from Varanasi</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------- about ------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo.jpg" alt ="Satwik" class="profile-pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'd be happy to help, but I'll need a bit more information
+                    about you in order to write something meaningful.
+                    Could you please provide me with some details about yourself? 
+                    For instance, you could tell me about your interests, hobbies,
+                    profession, background, or anything else you'd like to share.
+                    The more information you provide, the better I can tailor
+                    my writing to accurately reflect you.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web app</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Maching Learning</span><br>Python, Tableau, </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2022 - Current</span><br>Graphic Designer at Xanthronz, NITA</li>
+                            <li><span>August 2023</span><br>Data Analytics and Visualization Virtual Experience at Accenture
+                            <li><span>August 2023</span><br>Data Science Virtual
+                            Experience Programme at British Airways</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>B.Tech from NIT Agartala</li>
+                            <li><span>2018 - 2020</span><br>10+2 from SACS, Varanasi</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------services------------------------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-beat" style="color: #ffffff;"></i>
+                    <h2>Web Design</h2>
+                    <p>A web developer is a professional who specializes in creating and
+                        maintaining websites and web applications.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop fa-beat" style="color: #ffffff;"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>A web developer is a professional who specializes in creating and
+                        maintaining websites and web applications.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server fa-beat" style="color: #ffffff;"></i>
+                    <h2>Machine Design</h2>
+                    <p>A web developer is a professional who specializes in creating and
+                        maintaining websites and web applications.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------------------------------work------------------------------------------------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/weather-forecast-vector-11181087.png" alt="">
+                    <div class="layer">
+                        <h3>Weather Forcast Website</h3>
+                        <p>Uses some weather api to show the 
+                            current weather of the given places. </p>
+                            <a href="https://satwikgupta.github.io/weather_forcast/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work (2).jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>the app connects you the talented paoeple around the world.
+                            Download it from play store. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/digit-project.png" alt="">
+                    <div class="layer">
+                        <h3>Handwritten Digit Recognition</h3>
+                        <p>This program use MNIST dataset to recognize the 
+                            handwritten digit in numbers. It uses 28 x 28 
+                            picture to regconize the digit.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more...</a>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------contact------------------------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i> satwikgupta1801@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91-93054 26444</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <!-- <a href="#"></a> -->
+                    </div>
+                    <a href="images/Satwik_Gupta_Resume (1).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Meassage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright to Satwik. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials.</p>
+        </div>
+    </div>
+
+
+<!-- -------------------------------------------------script-------------------------------------------------------- -->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJtStU1e4mw5_n3ab5JCu9lwCBRVAiRDD33-GNRIGIqVtII0U5wgMLlxXQ9GQid1A87w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.name-title', {
+      strings: ['Python Coder', 'Web Developer', 'YouTuber'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+
+</body>
+</html>
