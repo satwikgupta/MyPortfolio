@@ -123,7 +123,17 @@
                         <h3>Weather Forcast Website</h3>
                         <p>Uses some weather api to show the 
                             current weather of the given places. </p>
-                            <a href="https://satwikgupta.github.io/weather_forcast/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/satwikgupta/weather_forcast"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/css-logo.jpg" alt="">
+                    <div class="layer">
+                        <h3>Civil Services Society - Website</h3>
+                        <p>This is the website for the club co-founded by 
+                            me, in my institute that focuses on civil services.
+                        </p>
+                        <a href="https://github.com/CSS-NITA/officialWebsite"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -134,16 +144,27 @@
                             <a href="https://satwikgupta.github.io/QRcodeGenerator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+                
+                <div class="work hidden">
                     <img src="images/digit-project.png" alt="">
                     <div class="layer">
                         <h3>Handwritten Digit Recognition</h3>
                         <p>This program use MNIST dataset to recognize the 
                             handwritten digit in numbers. It uses 28 x 28 
-                            picture to regconize the digit.</p>
-                            <a href="https://github.com/satwikgupta/Bharat_intern/tree/962dc78357bffe5ecd3ba62782194ba80f9fdcd7/digit_recognition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            picture to regconize the digit.
+                        </p>
+                        <a  href="https://github.com/satwikgupta/Bharat_intern/tree/962dc78357bffe5ecd3ba62782194ba80f9fdcd7/digit_recognition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
+                <!-- <div class="work hidden">
+                    <img src="images/digit-project.png" alt="">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        <p>This is a calculator madde by using simple Javascript and HTML.
+                        </p>
+                        <a  href="https://github.com/satwikgupta/calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
             </div>
             <a href="#portfolio" class="btn">See more...</a>
         </div>
@@ -237,6 +258,23 @@
       loop: true
     });
   </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const seeMoreButton = document.querySelector('.btn');
+        const hiddenItems = document.querySelectorAll('.work.hidden');
+
+        seeMoreButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            
+            hiddenItems.forEach(function (hiddenItem) {
+                hiddenItem.style.display = 'block';
+            });
+
+            seeMoreButton.style.display = 'none';
+        });
+    });
+</script>
 
 </body>
 </html>
