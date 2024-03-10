@@ -290,6 +290,7 @@ nav ul li a:hover::after {
 .contact-left p i {
   color: #ff004f;
   margin-right: 15px;
+  margin-bottom: 8px;
   font-size: 25px;
 }
 .social-icons {
@@ -309,6 +310,9 @@ nav ul li a:hover::after {
 }
 .btn.btn2 {
   display: inline-block;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   background: #ff004f;
 }
 .contact-right form {
